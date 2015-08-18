@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="EXPERT FILTER BY NAME"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_white">
+            <EditText
+                style="@style/EditText"
+                android:hint="Enter expert name"
+                android:id="@+id/expert_search_name"
+                android:drawableRight="@mipmap/ic_search_black_36dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/card_background_white">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/expert"
+                android:id="@+id/expertimage"
+                />
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/expertimage"
+                android:orientation="vertical"
+                android:id="@+id/layoutwrapper"
+                android:layout_alignParentRight="true">
+
+
+                <TextView
+                    style="@style/Expert_EditText"
+                    android:text="CHRISTOPHER N MULWA"
+                    android:id="@+id/expertname"
+                    android:editable="false"
+                    />
+                <TextView
+                    style="@style/Expert_EditText"
+                    android:text="@string/education"
+                    android:editable="false"
+                    android:id="@+id/experteducation"
+                    />
+                <TextView
+                    style="@style/Expert_EditText"
+                    android:text="Bio Technician"
+                    android:id="@+id/expertspecialization"
+
+                    />
+
+                <TextView
+                style="@style/Expert_EditText"
+                android:text="NAIROBI UPPER HILL"
+                android:id="@+id/expertlocation"
+                />
+                <TextView
+                    style="@style/Expert_EditText"
+                    android:text="0707200314"
+                    android:id="@+id/expertmobile"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutwrapper"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_call_white_24dp"
+                    android:id="@+id/call_expert"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white"
+                    android:text="Call"
+                    android:textSize="14sp"
+                    android:background="@color/darkgreen"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_textsms_white_24dp"
+                    android:id="@+id/sms_expert"
+                    android:text="Sms"
+                    android:background="@color/darkgreen"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

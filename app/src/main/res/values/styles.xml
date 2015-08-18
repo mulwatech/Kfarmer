@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/layoutheight</item>
+        <item name="android:paddingLeft">@dimen/et_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Expert_EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dispay_edittext_height</item>
+        <!--<item name="android:paddingLeft">@dimen/et_padding</item>-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    
+        <!--submit buton stlye-->
+    <style name="Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/btnsubmit</item>
+        <item name="android:background">@color/btncolor</item>
+    </style>
+    <!--TITLE STYLE-->
+        <style name="Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:background">@color/gmail_red</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <!-- spinner styles-->
+    <style name="spinner">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/layoutheight</item>
+    </style>
+
+    <style name="Linedivider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/line_divider</item>
+    </style>
+
+    <style name="button_text" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >20dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+</resources>

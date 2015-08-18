@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="DEALER FILTER BY LOCATION" />
+
+        <View style="@style/Linedivider"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_white">
+
+            <EditText
+                android:id="@+id/dealer_search_name"
+                style="@style/EditText"
+                android:drawableRight="@mipmap/ic_search_black_36dp"
+                android:hint="Enter Location" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/card_background_white"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/firmnameholder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:text="Firm Name:" />
+
+        <TextView
+            android:id="@+id/firmnameEditview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Kimy Farmers" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firmnameEditview1"
+            android:editable="false"
+            android:text="County:" />
+
+        <EditText
+            android:id="@+id/countyEditview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/firmnameEditview1"
+            android:text="Kiambu " />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/countyEditview1"
+            android:editable="false"
+            android:text="Location:" />
+
+        <EditText
+            android:id="@+id/locationEditview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/countyEditview1"
+            android:text="Kiambu town" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationEditview1"
+            android:editable="false"
+            android:text="Dealer of:" />
+
+        <EditText
+            android:id="@+id/dealerofEditview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/locationEditview1"
+            android:text="Retailer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dealerofEditview1"
+            android:editable="false"
+            android:text="Mobile No:" />
+
+        <EditText
+            android:id="@+id/mobileEditview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dealerofEditview1"
+
+            android:text="0707200314" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileEditview1"
+            android:background="@color/darkgreen"
+            android:drawableLeft="@mipmap/ic_call_white_24dp"
+            android:text="Call"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mobileEditview1"
+            android:background="@color/darkgreen"
+            android:drawableLeft="@mipmap/ic_textsms_white_24dp"
+            android:text="Sms"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="DEALER SEARCH FILTER"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/button_text"
+                android:text="Search by Dealer name"
+                android:id="@+id/search_dealer_name"
+                android:background="@color/darkgreen"
+                />
+
+            <Button
+                style="@style/button_text"
+                android:text="Search by Location"
+                android:id="@+id/dealerlocation"
+                android:background="@color/darkgreen"/>
+            <Button
+                style="@style/button_text"
+                android:text="WHOLE SALLERS"
+                android:id="@+id/wholesallers"
+                android:background="@color/darkgreen"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/sale"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/ic_image_black_48dp"
+                    android:id="@+id/productimage"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productimage"
+                    android:src="@mipmap/ic_photo_camera_white_36dp"
+                    android:background="@color/darkgreen"
+                    android:id="@+id/takephoto"
+                   />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/productimage"
+                    android:id="@+id/choosephoto"
+                    android:background="@color/darkgreen"
+                    android:src="@mipmap/ic_attachment_white_36dp"/>
+            </RelativeLayout>
+
+            <Spinner
+                style="@style/spinner"
+                android:id="@+id/product_category"
+                />
+
+            <EditText
+               style="@style/EditText"
+                android:id="@+id/productname"
+                android:hint="@string/productname"
+                />
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/product_quantity"
+                android:hint="@string/quantity"
+                />
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/product_amount"
+                android:hint="@string/amount"
+                />
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/product_description"
+                android:hint="@string/description"
+                />
+            <Button
+                style="@style/Button"
+                android:text="@string/btnsubmit"
+                android:id="@+id/submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Title"
+            android:text="@string/farmer_reg"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/fname"
+                android:hint="@string/fname"/>
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/s_name"
+                android:hint="@string/sname"/>
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/phone_no"
+                android:phoneNumber="true"
+                android:hint="@string/phone_no" />
+            <Spinner
+                style="@style/spinner"
+                android:id="@+id/farmer_county"/>
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/district"
+                android:hint="@string/district" />
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/email"
+                android:hint="@string/email"/>
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/password"
+                android:hint="@string/password"/>
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/password2"
+                android:hint="@string/password2"/>
+
+            <Button
+                style="@style/Button"
+                android:text="@string/btnsubmit"
+                android:id="@+id/farmer_registration"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

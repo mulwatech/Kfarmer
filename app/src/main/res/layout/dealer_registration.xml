@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/dealer_reg"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:hint="@string/firmname"
+                android:id="@+id/firmname"
+                style="@style/EditText"/>
+            <Spinner
+                style="@style/spinner"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/dealer_county"
+                />
+
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/firm_town"
+                android:id="@+id/dealer_town"/>
+
+            <Spinner
+                style="@style/spinner"
+                android:id="@+id/business_nature"/>
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/dealername"
+                android:id="@+id/dealername"/>
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/phone_no"
+                android:id="@+id/dealer_phone_no"/>
+
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/email"
+                android:id="@+id/dealer_email"/>
+
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/password"
+                android:hint="@string/password"/>
+            <EditText
+                style="@style/EditText"
+                android:id="@+id/password2"
+                android:hint="@string/password2"/>
+
+            <Button
+                style="@style/Button"
+                android:layout_gravity="center"
+                android:id="@+id/dealer_register"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+

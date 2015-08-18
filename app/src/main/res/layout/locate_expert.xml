@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Title"
+            android:text="EXPERT SEARCH FILTER"/>
+        <View
+            style="@style/Linedivider">
+        </View>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/button_text"
+                android:text="Search by Expert name"
+                android:id="@+id/search_expert_name"
+                android:background="@color/darkgreen"
+                />
+
+            <Button
+                style="@style/button_text"
+                android:text="Search by Expert Location"
+                android:id="@+id/expertbylocation"
+                android:background="@color/darkgreen"/>
+            <Button
+                style="@style/button_text"
+                android:text="Best Rated"
+                android:id="@+id/expertbyrate"
+                android:background="#2E7D32"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

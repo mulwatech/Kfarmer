@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    >
+    <TextView
+        style="@style/Title"
+        android:text="@string/registation"
+        />
+    <View
+        style="@style/Linedivider">
+    </View>
+
+   <ScrollView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+       <TableLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dip"
+               android:layout_weight="0.5">
+               <ImageButton
+                   android:layout_width="@dimen/btnWidth"
+                   android:layout_height="@dimen/btnHeight"
+                   android:src="@drawable/farmervector"
+                   android:id="@+id/register_as_farmer"
+                   android:clickable="false"
+                   android:baselineAlignBottom="false" />
+
+               <ImageButton
+                   android:layout_width="@dimen/btnWidth"
+                   android:layout_height="@dimen/btnHeight"
+                   android:text="@string/dealer"
+                   android:src="@drawable/seller_icon"
+                   android:id="@+id/register_as_dealer"
+                   />
+
+           </TableRow>
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dip"
+               android:layout_weight="0.5">
+               <ImageButton
+                   android:layout_width="@dimen/btnWidth"
+                   android:layout_height="@dimen/btnHeight"
+                   android:src="@drawable/expert"
+                   android:id="@+id/as_expert"/>
+               <ImageButton
+                   android:layout_width="@dimen/btnWidth"
+                   android:layout_height="@dimen/btnHeight"
+                   android:text="@string/dealer"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="@dimen/bottombuttonmargin"
+                   android:src="@drawable/farmer_icon"
+                   />
+
+           </TableRow>
+       </TableLayout>
+
+   </ScrollView>
+
+</LinearLayout>
